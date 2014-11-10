@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+.app-title {
+  text-align: center;
+  font-family: Lato;
+  font-weight: 100;
+}
