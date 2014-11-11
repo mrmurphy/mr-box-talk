@@ -4,7 +4,7 @@
   "description": "A talk about writing a nifty custom Angular directive",
   "main": "index.js",
   "scripts": {
-    "test": "karma start karma.conf.js --watch"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
