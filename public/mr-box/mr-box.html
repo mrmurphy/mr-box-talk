@@ -1,0 +1,11 @@
+<div class="mr-box">
+  <div ng-if="state == 'loading'">
+    {{loadMsg}}
+  </div>
+  <div ng-if="state == 'error'">
+    {{errorMsg}}
+  </div>
+  <div ng-if="state == 'loaded'">
+    <ng-transclude>
+  </div>
+</div>

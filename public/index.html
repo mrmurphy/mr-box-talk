@@ -8,6 +8,21 @@
 	<body ng-app="MRBoxTalk">
 		<h3 class="app-title">MR-Box!</h3>
 		<div ng-controller="Controller">
+			<mr-timer></mr-timer>
+			<mr-box
+				load-msg="Loading!"
+				resolve-fn="waitsAndResolves()"
+			>
+				<img ng-src="{{imgUrl}}" alt="">
+			</mr-box>
+			<mr-timer></mr-timer>
+			<mr-box
+				load-msg="Loading!"
+				error-msg="Sorry, that doesn't appear to be working!"
+				resolve-fn="waitsAndRejects()"
+			>
+				<img ng-src="{{imgUrl}}" alt="">
+			</mr-box>
 		</div>
 
 		<script src="/bower_components/angular/angular.js"></script>
